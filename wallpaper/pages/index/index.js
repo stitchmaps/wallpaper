@@ -2,7 +2,7 @@ var e = null;
 
 Page({
   data: {
-    allResList: ["http://magzinefs7.nearme.com.cn/uploads/wallpaper/2/2018/12/21/5c1c58074a415_1080x1920.jpg", "http://magzinefs8.nearme.com.cn/uploads/wallpaper/1/2018/12/25/5c21da5010b60_1080x1920.jpg", "http://magzinefs4.nearme.com.cn/uploads/wallpaper/2/2018/12/22/5c1daca2dc1b2_1080x1920.jpg", "http://magzinefs6.nearme.com.cn/uploads/wallpaper/0/2018/12/27/5c248e6892cd1_1080x1920.jpg"],
+    allResList: ["https://images.unsplash.com/photo-1609611337748-ff7063295e4d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80","https://images.unsplash.com/photo-1609623096082-ed982304b689?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=632&q=80", "https://images.unsplash.com/photo-1609599161280-580610c0bb4d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1355&q=80","https://images.unsplash.com/photo-1609645778471-613f21fcf3df?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"],
     currentImgIndex: 0,
     icon: ["../../image/YSG-x-logo.png"],
     addPersonNum: 0
@@ -10,7 +10,7 @@ Page({
   onLoad: function () {
     this.setData({
       addPersonNum: parseInt(200 * Math.random() + 400)
-    }), wx.createRewardedVideoAd && ((e = wx.createRewardedVideoAd({
+    })/* , wx.createRewardedVideoAd && ((e = wx.createRewardedVideoAd({
       adUnitId: "adunit-9e9b61bbf0da8932"
     })).onLoad(function () { }), e.onError(function (e) { }), e.onClose(function (e) {
       e && e.isEnded ? wx.setClipboardData({
@@ -24,7 +24,7 @@ Page({
         title: "你要看完才行哦",
         icon: "none"
       });
-    }));
+    })); */
   },
   swiperChange: function (e) {
     var a = e.detail.current;
@@ -38,7 +38,9 @@ Page({
       urls: [e.currentTarget.dataset.src]
     });
   },
-  addGroup: function () {
+
+  //广告
+/*   addGroup: function () {
     e && e.show().catch(function () {
       e.load().then(function () {
         return e.show();
@@ -46,7 +48,7 @@ Page({
         console.log("激励视频 广告显示失败");
       });
     });
-  },
+  }, */
   onShareAppMessage: function () {
     return {
       title: "仪式感壁纸",

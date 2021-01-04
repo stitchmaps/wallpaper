@@ -11,10 +11,10 @@
       </swiper-item>
     </swiper>
   </view>
-  <view bindtap="addGroup" class="bottomTip">
-    🔥看视频加入壁纸圈
+  <view bindtap="" class="bottomTip">
+    🔥点击支持作者
     <view class="bottomTip-num">(人数:{{addPersonNum||'-'}})</view>
     🔥
   </view>
-  <view class="bottom">Copyright © 壁纸资源来自 OPPO锁屏杂志，未经允许禁止商用、二次上传以及转载。</view>
+  <view class="bottom">Copyright © 壁纸资源来自 nsplash.com，未经允许禁止商用、二次上传以及转载。</view>
 </view>
